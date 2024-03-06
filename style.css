@@ -1,0 +1,73 @@
+/* ========== RESET START ==========*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ========== RESET END ==========*/
+
+
+body {
+  min-height: 100vh;
+}
+
+/* ========== LAYOUT START ==========*/
+.main-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content"
+
+}
+
+.header {
+  grid-area: header;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header>* {
+  display: flex;
+}
+
+/* ========== LAYOUT END ==========*/
+
+/* ========== COMPONENTS START ==========*/
+
+/* ========== COMPONENTS END ==========*/
+
+/* ========== DEV PURPOSE ==========*/
+/* make the icons to move to the right */
+.header>:first-child>.icons {
+  margin-left: auto;
+}
+
+/* make the icons to move to the right */
+.header>:nth-child(2)>.buttons {
+  margin-left: auto;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main-content {
+  grid-area: main-content;
+}
+
+/* outline for development purpose */
+/* feel free to remove this styles */
+.main-container>* {
+  border: 1px solid black;
+}
+
+.header>* {
+  border: 1px solid blue;
+}
