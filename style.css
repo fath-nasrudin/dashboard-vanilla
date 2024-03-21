@@ -22,6 +22,11 @@ button {
   font-family: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ========== RESET END ==========*/
 
 
@@ -71,8 +76,13 @@ body {
 }
 
 .main-content>:nth-child(2) {
-  background-color: blue;
   width: 300px;
+}
+
+.rightbar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* ========== LAYOUT END ==========*/
@@ -100,12 +110,20 @@ body {
 }
 
 .profile__image--md {
+  height: 48px;
+}
+
+.profile__image--lg {
   height: 64px;
 }
 
 .profile__title {
   white-space: nowrap;
   font-weight: 600;
+}
+
+.profile__subtitle {
+  color: #555555;
 }
 
 /* ===== Searchbar Component ===== */
@@ -221,6 +239,54 @@ body {
   font-weight: 600;
 }
 
+
+/* ===== Card List Component ===== */
+.cardlist {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cardlist__content {
+  border-top: 1px solid #b6b6b6;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.cardlist>.cardlist__content:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.cardlist>.cardlist__content:last-child {
+  padding-bottom: 0;
+}
+
+.cardlist__title {
+  font-weight: 600;
+}
+
+.cardlist__paragraph {
+  color: #3b3b3b;
+}
+
+.cardlist-profile {
+
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+
 /* ========== COMPONENTS END ==========*/
 
 /* ========== UTILITIES START ==========*/
@@ -275,8 +341,4 @@ body {
 /* feel free to remove this styles */
 .main-container>* {
   border: 1px solid black;
-}
-
-.main-content>* {
-  border: 1px solid green;
 }
