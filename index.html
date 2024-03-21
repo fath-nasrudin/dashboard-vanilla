@@ -13,21 +13,27 @@
       <header class="header">
         <div>
           <div class="searchbar">
-            <div class="searchbar__icon">search</div>
             <input class="searchbar__input" />
+            <button class="searchbar__icon button-icon">
+              <img src="./images/icons/search.svg" alt="search">
+            </button>
           </div>
 
           <div class="icons">
-            <div class="icon">U</div>
-            <div class="icon">Z</div>
+            <button class="button-icon">
+              <img src="./images/icons/user.svg" alt="Profile">
+            </button>
+            <div class="button-icon">
+              <img src="./images/icons/setting.svg" alt="settings">
+            </div>
           </div>
 
           <div class="profile">
-            <div class="profile__image">
-              Image
+            <div class="profile__image profile__image--sm">
+              <img src="./images/profile-1.jpg" alt="black and white photo of an old man">
             </div>
             <div class="profile__content">
-              <div class="title">Morgan Oakley</div>
+              <div class="profile__title">Morgan Oakley</div>
             </div>
 
           </div>
@@ -36,19 +42,21 @@
 
         <div>
           <div class="profile">
-            <div class="profile__image">
-              Image
+            <div class="profile__image profile__image--md">
+              <img src="./images/profile-1.jpg" alt="your profile photo">
             </div>
             <div class="profile__content">
-              <div class="title">Morgan Oakley</div>
+              <div class="profile__subtitle text-600">Hi there,</div>
+
+              <div class="profile__title text-lg">Morgan Oakley</div>
             </div>
 
           </div>
 
           <div class="buttons">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <button class="btn btn__primary">New</button>
+            <button class="btn btn__primary">Upload</button>
+            <button class="btn btn__primary">Share</button>
           </div>
         </div>
       </header>
