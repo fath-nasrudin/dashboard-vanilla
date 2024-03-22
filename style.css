@@ -430,9 +430,3 @@ body {
 .main-content {
   grid-area: main-content;
 }
-
-/* outline for development purpose */
-/* feel free to remove this styles */
-.main-container>* {
-  border: 1px solid black;
-}
