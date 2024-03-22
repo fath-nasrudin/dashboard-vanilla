@@ -49,6 +49,7 @@ body {
 .header {
   grid-area: header;
   padding: 24px 64px;
+  box-shadow: var(--box-shadow);
 
   display: flex;
   flex-direction: column;
