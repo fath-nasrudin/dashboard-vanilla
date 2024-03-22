@@ -1,6 +1,6 @@
 # Dashboard Vanilla
 
-A Dashboard created with vanilla JS and pure CSS
+A Dashboard created with only HTML and CSS. no mambo-jumbo frameworks or preprocessors.
 
 ## Links
 live demo: https://fath-nasrudin.github.io/dashboard-vanilla/
