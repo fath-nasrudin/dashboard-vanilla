@@ -85,6 +85,16 @@ body {
   gap: 16px;
 }
 
+.leftbar {
+  background-color: #008ee0;
+  padding: 16px;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
 /* ========== LAYOUT END ==========*/
 
 /* ========== COMPONENTS START ==========*/
@@ -160,6 +170,13 @@ body {
   align-items: center;
   justify-content: center;
 
+}
+
+.icon {
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  color: white;
 }
 
 .button-icon--sm {
@@ -287,6 +304,44 @@ body {
 
 }
 
+/* ===== List Component ===== */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list__item {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.list__item:hover {
+  background-color: #ffffff31;
+  cursor: pointer;
+}
+
+/* ===== Logo Component ===== */
+.brand {
+  font-size: 32px;
+  font-weight: 900;
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.brand__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ========== COMPONENTS END ==========*/
 
 /* ========== UTILITIES START ==========*/
@@ -317,6 +372,45 @@ body {
 }
 
 /* ========== UTILITIES END ==========*/
+
+/* ========== ICONS START ==========*/
+.icon-home {
+  background-image: url('./images/icons/home.svg');
+}
+
+.icon-chat-bubble {
+  background-image: url('./images/icons/chat-bubble.svg');
+}
+
+.icon-help-center {
+  background-image: url('./images/icons/help-center.svg');
+}
+
+.icon-people {
+  background-image: url('./images/icons/people.svg');
+}
+
+.icon-privacy {
+  background-image: url('./images/icons/privacy.svg');
+}
+
+.icon-task {
+  background-image: url('./images/icons/task.svg');
+}
+
+.icon-watch {
+  background-image: url('./images/icons/watch.svg');
+}
+
+.icon-setting {
+  background-image: url('./images/icons/setting-white.svg');
+}
+
+.icon-profile {
+  background-image: url('./images/icons/profile.svg');
+}
+
+/* ========== ICONS END ==========*/
 
 /* ========== DEV PURPOSE ==========*/
 /* make the icons to move to the right */
